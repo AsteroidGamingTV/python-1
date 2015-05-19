@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time as t
+
+print(c.clear)
+
+while True:
+    for count in range(4):
+        for count in range(11):
+            print(c.blue + 'Bad' + c.red + 'ger' + c.yellow + 's!')
+            t.sleep(0.775) 
+        for count in range(2):
+            print(c.red + 'Mush' + c.blue + 'room!')
+            t.sleep(2.172)
+        for count in range(2):
+            print(c.yellow + 'a ' + c.blue + 'snake')
+            t.sleep(2.95)
+        for count in range(1):
+            print
