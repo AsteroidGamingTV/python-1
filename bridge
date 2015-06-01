@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+print(c.red + 'Who would cross the Bridge of Death must answer me these questions three! ')
+print(c.red + 'Ere the other side he see! ')
+
+print(c.red + 'What is your name? ')
+name = input(c.red + '>')
+
+print(c.red + 'What is your quest? ')
+
+
+print(c. red + 'What is your favorite color? ')

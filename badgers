@@ -17,4 +17,5 @@ while True:
             print(c.yellow + 'a ' + c.blue + 'snake')
             t.sleep(2.95)
         for count in range(1):
-            print
+            print(c.blue + 'aaaaa' + c.red 'wooooo')
+
