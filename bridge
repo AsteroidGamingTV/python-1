@@ -14,9 +14,32 @@ def prompt(question):
     print(c.reset)
     return answer
 
+def live():
+    print(c.red + 'Right, off you go then.' + c.reset)
+
+def die():
+    print('Thou art cast into the Gorge of Eternal Perial.')
+
 name = prompt('What is your name? ')
 quest = prompt('What is your quest? ')
 color = prompt('What is your favorite color? ')
 
 if name == 'Lancelot' or name == 'Galahad':
     color = prompt('What is your favorite color? ')
+    if color == 'blue':
+        live()
+    else:
+        die()
+        
+elif name == 'robin':
+    capital = prompt('What is the capital of Assyria? ')
+    if capital in ['assur','ashur']:
+        live()
+    else:
+        die()
+
+elif name == 'arthur':
+    speed = prompt('What is the air speed velocity of an unladen swallow? ')
+    if speed == ['24 mph','11 mps', '24 miles per hour', '11 meters per second']:
+        live()
+    elif speed ==     
