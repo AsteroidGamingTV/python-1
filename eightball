@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+
+import colors as c
+import random
+
+print(c.orange + """Hola Amigo! Welcome To Magic EightBall!
+Enter Your Question Below! Adios Amigos""")
+
+answers = [
+    c.yellow + 'My Sources Say Yass.',
+    c.blue + 'My Sources Say No.',
+    c.orange + 'Possibly',
+    c.magenta + 'Reply Hazy, Try Again Later.',
+    c.yellow + 'I Honestly Do Not Even Care.',
+    c.orange + 'I Would Tell You, But I Really Gotta Poo!', 
+    c.blue + 'I Cannot Tell You.',
+    c.magenta + 'Go Eat A Cheese Burger!',
+    c.green + 'Ewwwww, Did You Just Fart?',
+    c.orange + 'I Lost A Race Against A Turtle.',
+    c.blue + 'Better Not Tell You Now!',
+    c.magenta + 'If I Answer Honestly Will You Hit Me?']
+
+while True:
+    input(c.red + '----> ')
+    answer = random.choice(answers)
+    print(answer)
