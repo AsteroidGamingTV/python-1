@@ -24,6 +24,10 @@ def ask(prompt):
     answer = input(prompt).strip().lower()
     return answer
 
+def bye():
+    print("    Why Have Thou Forsaken Me? >:[")
+    exit()
+
 try:
     while True:
         question = input(c.red + '----> ')
@@ -35,4 +39,5 @@ try:
             answer = random.choice(answers)
             print(answer)
 except KeyboardInterrupt:
-    exit(0)
+    print()
+    bye()
