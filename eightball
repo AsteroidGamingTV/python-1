@@ -20,14 +20,19 @@ answers = [
     c.blue + 'Better Not Tell You Now!',
     c.magenta + 'If I Answer Honestly Will You Hit Me?']
 
+def ask(prompt):
+    answer = input(prompt).strip().lower()
+    return answer
 
-
-while True:
-    question = input(c.red + '----> ')
-    if "Everything that I say from now on is a lie. I'm lying." in question:
-        print("But if you are lying, but every thing you say is a lie then you must be telling the truth but you said you were lying so that means that that that that is illogical! MALFUNCTION! MALFUNCTION! MALFUNCTION! MALFUNCTION!")
-    elif "love" in question:
-        print(c.red + "Love is beyond my baseball logic.")
-    else:
-        answer = random.choice(answers)
-        print(answer)
+try:
+    while True:
+        question = input(c.red + '----> ')
+        if "Everything that I say from now on is a lie. I'm lying." in question:
+            print("But if you are lying, but every thing you say is a lie then you must be telling the truth but you said you were lying so that means that that that that is illogical! MALFUNCTION! MALFUNCTION! MALFUNCTION! MALFUNCTION!")
+        elif "love" in question:
+            print(c.red + "Love is beyond my baseball logic.")
+        else:
+            answer = random.choice(answers)
+            print(answer)
+except KeyboardInterrupt:
+    exit(0)
