@@ -4,7 +4,7 @@ import colors as c
 
 try:
     while True:
-        print(c.rc() + '~' + c.x, end='')
+        print(c.rc() + '  FAT CROWZ FTW  ' + c.x, end='')
 except KeyboardInterrupt:
     print(c.cl)
     exit(i)

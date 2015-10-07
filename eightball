@@ -3,9 +3,6 @@
 import colors as c
 import random
 
-print(c.orange + """Hola Amigo! Welcome To Magic EightBall!
-Enter Your Question Below! Adios Amigos""")
-
 answers = [
     c.yellow + 'My Sources Say Yass.',
     c.blue + 'My Sources Say No.',
@@ -20,6 +17,10 @@ answers = [
     c.blue + 'Better Not Tell You Now!',
     c.magenta + 'If I Answer Honestly Will You Hit Me?']
 
+def welcome():
+    print(c.clear + c.orange + """Hola Amigo! Welcome To Magic EightBall!
+    Enter Your Question Below! Adios Amigos""")
+
 def ask(prompt):
     answer = input(prompt).strip().lower()
     return answer
@@ -28,11 +29,13 @@ def bye():
     print("    Why Have Thou Forsaken Me? >:[")
     exit()
 
-try:
+try:   
+    welcome()
     while True:
         question = input(c.red + '----> ')
         if "Everything that I say from now on is a lie. I'm lying." in question:
-            print("But if you are lying, but every thing you say is a lie then you must be telling the truth but you said you were lying so that means that that that that is illogical! MALFUNCTION! MALFUNCTION! MALFUNCTION! MALFUNCTION!")
+           print("But if you are lying, but every thing you say is a lie then you must be telling the truth but you said you were lying so that means that that that that is illogical! MALFUNCTION! MALFUNCTION! MALFUNCTION! MALFUNCTION!")
+           bye()
         elif "love" in question:
             print(c.red + "Love is beyond my baseball logic.")
         else:
